@@ -3,13 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using ExileCore.PoEMemory.Components;
-using ExileCore.PoEMemory.Elements.InventoryElements;
-using ExileCore.PoEMemory.MemoryObjects;
+using ExileCore.RenderQ;
 using ExileCore.Shared.Nodes;
 using ImGuiNET;
-using nuVector4 = System.Numerics.Vector4;
 namespace Proximity
 {
     partial class Proximity
@@ -18,6 +14,13 @@ namespace Proximity
         {
             var refValue = setting.Value;
             ImGui.SliderInt(labelString, ref refValue, setting.Min, setting.Max);
+            return refValue;
+        }
+
+        public static float FloatSlider(string labelString, RangeNode<float> setting)
+        {
+            var refValue = setting.Value;
+            ImGui.SliderFloat(labelString, ref refValue, setting.Min, setting.Max);
             return refValue;
         }
 
@@ -39,8 +42,65 @@ namespace Proximity
             }
         }
 
+        public static string ComboBox(string labelString, ListNode setting)
+        {
+            var items = setting.Values.ToArray();
+            var refValue = Array.IndexOf(items, setting.Value);
+            ImGui.Combo(labelString, ref refValue, items, items.Length);
+            return items[refValue];
+        }
+
+        public Dictionary<string, FontContainer> fonts { get; }  = new Dictionary<string, FontContainer>();
+
+        private unsafe void SetFonts()
+        {
+            var folder = "fonts";
+            var files = Directory.GetFiles(folder);
+
+            if (!(Directory.Exists(folder) && files.Length > 0))
+                return;
+
+            var fontsForLoad = new List<(string, int)>();
+
+            if (files.Contains($"{folder}\\config.ini"))
+            {
+                var lines = File.ReadAllLines($"{folder}\\config.ini");
+
+                foreach (var line in lines)
+                {
+                    var split = line.Split(':');
+                    fontsForLoad.Add(($"{folder}\\{split[0]}.ttf", int.Parse(split[1])));
+                }
+            }
+
+            var sm = new ImFontAtlas();
+            ImFontAtlas* some = &sm;
+
+            var imFontAtlasGetGlyphRangesCyrillic = ImGuiNative.ImFontAtlas_GetGlyphRangesCyrillic(some);
+            fonts["Default:13"] = new FontContainer(ImGuiNative.ImFontAtlas_AddFontDefault(some, null),
+                "Default", 13);
+
+            foreach (var tuple in fontsForLoad)
+            {
+                var bytes = Encoding.UTF8.GetBytes(tuple.Item1);
+
+                fixed (byte* f = &bytes[0])
+                {
+                    fonts[$"{tuple.Item1.Replace(".ttf", "").Replace("fonts\\", "")}:{tuple.Item2}"] =
+                        new FontContainer(
+                            ImGuiNative.ImFontAtlas_AddFontFromFileTTF(some, f, tuple.Item2, null,
+                                imFontAtlasGetGlyphRangesCyrillic), tuple.Item1, tuple.Item2);
+                }
+            }
+
+            Settings.Font.Values = new List<string>(fonts.Keys);
+        }
+
         public override void DrawSettings()
         {
+            Settings.Font.Value = ComboBox("Fonts", Settings.Font);
+            Settings.Scale.Value = FloatSlider("Height Scale", Settings.Scale);
+            ImGui.SameLine(); HelpMarker("Height Scale.");
             Settings.ProximityX.Value = IntSlider("Proximity X Position##proxx", Settings.ProximityX);
             ImGui.SameLine(); HelpMarker("Relative to the center of the screen.");
             Settings.ProximityY.Value = IntSlider("Proximity Y Position##proxy", Settings.ProximityY);

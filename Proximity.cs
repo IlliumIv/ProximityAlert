@@ -34,6 +34,9 @@ namespace Proximity
             soundDir = Path.Combine(DirectoryFullName, "sounds\\").Replace('\\', '/');
             PathDict = LoadConfig(Path.Combine(DirectoryFullName, "PathAlerts.txt"));
             ModDict = LoadConfig(Path.Combine(DirectoryFullName, "ModAlerts.txt"));
+
+            SetFonts();
+
             return true;
         }
 
@@ -286,6 +289,10 @@ namespace Proximity
             try
             {
                 PlaySounds = Settings.PlaySounds;
+                var _height = (float)Int32.Parse(Settings.Font.Value.Substring(Settings.Font.Value.Length - 2));
+                _height = _height * Settings.Scale;
+                var margin = (_height / Settings.Scale) / 4;
+
                 if (!Settings.Enable) return;
                     if (Settings.ShowNearby)
                     {
@@ -294,7 +301,8 @@ namespace Proximity
                             var entityScreenPos = ingameState.Camera.WorldToScreen(sEnt.Pos.Translate(0, 0, 0));
                             var textWidth = Graphics.MeasureText(sEnt.Path, 10) * 0.73f;
                             Graphics.DrawBox(new RectangleF(entityScreenPos.X - (textWidth.X/2),entityScreenPos.Y - 7,textWidth.X,13),new Color(0,0,0,200));
-                            Graphics.DrawText(sEnt.Path, new System.Numerics.Vector2(entityScreenPos.X, entityScreenPos.Y), Color.White, 10, "FrizQuadrataITC:13", FontAlign.Center | FontAlign.VerticalCenter);
+                            Graphics.DrawText(sEnt.Path, new System.Numerics.Vector2(entityScreenPos.X, entityScreenPos.Y), Color.White, 10, Settings.Font.Value, FontAlign.Center | FontAlign.VerticalCenter);
+                            // Graphics.DrawText(sEnt.Path, new System.Numerics.Vector2(entityScreenPos.X, entityScreenPos.Y), Color.White, 10, "FrizQuadrataITC:13", FontAlign.Center | FontAlign.VerticalCenter);
 
                         }
                     }
@@ -336,7 +344,8 @@ namespace Proximity
                     {
                         mods += structValue.Name;
                         lines++;
-                        Graphics.DrawText(structValue.Name, new System.Numerics.Vector2(origin.X + 4, origin.Y - (lines * 15)), structValue.Color, 10, "FrizQuadrataITC:15", FontAlign.Left);
+                        Graphics.DrawText(structValue.Name, new System.Numerics.Vector2(origin.X + _height / 2, origin.Y - (lines * _height)), structValue.Color, 10, Settings.Font.Value, FontAlign.Left);
+                        // Graphics.DrawText(structValue.Name, new System.Numerics.Vector2(origin.X + 4, origin.Y - (lines * 15)), structValue.Color, 10, "FrizQuadrataITC:15", FontAlign.Left);
                         Graphics.DrawImage("Direction-Arrow.png", rectDirection, rectUV, structValue.Color);
                     }
 
@@ -360,7 +369,7 @@ namespace Proximity
                     double phi;
                     double distance = delta.GetPolarCoordinates(out phi);
 
-                    RectangleF rectDirection = new RectangleF(origin.X - 16, origin.Y - 14 - (lines * 15), 15, 15);
+                    RectangleF rectDirection = new RectangleF(origin.X - margin - _height/2, origin.Y - margin/2 - _height - (lines * _height), _height, _height);
                     var rectUV = Get64DirectionsUV(phi, distance, 3);
                     string ePath = entity.Path;
                     // prune paths where relevant
@@ -371,7 +380,8 @@ namespace Proximity
                     {
                         mods += structValue.Name;
                         lines++;
-                        Graphics.DrawText(structValue.Name, new System.Numerics.Vector2(origin.X + 4, origin.Y - (lines * 15)), structValue.Color, 10, "FrizQuadrataITC:15", FontAlign.Left);
+                        Graphics.DrawText(structValue.Name, new System.Numerics.Vector2(origin.X + _height / 2, origin.Y - (lines * _height)), structValue.Color, 10, Settings.Font.Value, FontAlign.Left);
+                        // Graphics.DrawText(structValue.Name, new System.Numerics.Vector2(origin.X + 4, origin.Y - (lines * 15)), structValue.Color, 10, "FrizQuadrataITC:15", FontAlign.Left);
                         Graphics.DrawImage("Direction-Arrow.png", rectDirection, rectUV, structValue.Color);
                         match = true;
                     }
@@ -432,7 +442,8 @@ namespace Proximity
                     }
                     if (match)
                     {
-                        Graphics.DrawText(lineText, new System.Numerics.Vector2(origin.X + 4, origin.Y - (lines * 15)), lineColor, 10, "FrizQuadrataITC:15", FontAlign.Left);
+                        Graphics.DrawText(lineText, new System.Numerics.Vector2(origin.X + _height/2, origin.Y - (lines * _height)), lineColor, 10, Settings.Font.Value, FontAlign.Left);
+                        // Graphics.DrawText(lineText, new System.Numerics.Vector2(origin.X + 4, origin.Y - (lines * 15)), lineColor, 10, "FrizQuadrataITC:15", FontAlign.Left);
                         Graphics.DrawImage("Direction-Arrow.png", rectDirection, rectUV, lineColor);
 
                     }
@@ -440,10 +451,12 @@ namespace Proximity
 
                 if (lines > 0)
                 {
-                    RectangleF box = new RectangleF(origin.X - 2, origin.Y - (lines * 15), 192 + 4, (lines * 15) + 4);
+                    var widthMultiplier = 1 + _height / 100;
+
+                    RectangleF box = new RectangleF(origin.X - 2, origin.Y - margin - (lines * _height), (192 + 4) * widthMultiplier, margin + (lines * _height) + 4);
                     Graphics.DrawImage("back.png", box, Color.White);
-                    Graphics.DrawLine(new Vector2(origin.X - 15, origin.Y - 1 - (lines * 15)), new Vector2(origin.X + 192 + 4, origin.Y - 1 - (lines * 15)), 1, Color.White);
-                    Graphics.DrawLine(new Vector2(origin.X - 15, origin.Y + 3), new Vector2(origin.X + 192 + 4, origin.Y + 3), 1, Color.White);
+                    Graphics.DrawLine(new Vector2(origin.X - 15, origin.Y - margin - (lines * _height)), new Vector2(origin.X + (192 + 4) * widthMultiplier, origin.Y - margin - (lines * _height)), 1, Color.White);
+                    Graphics.DrawLine(new Vector2(origin.X - 15, origin.Y + 3), new Vector2(origin.X + (192 + 4) * widthMultiplier, origin.Y + 3), 1, Color.White);
                 }
             }
             catch { }
