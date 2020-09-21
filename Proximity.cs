@@ -337,7 +337,7 @@ namespace Proximity
                     double phi;
                     double distance = delta.GetPolarCoordinates(out phi);
 
-                    RectangleF rectDirection = new RectangleF(origin.X - 16, origin.Y - 14 - (lines * 15), 15, 15);
+                    RectangleF rectDirection = new RectangleF(origin.X - margin - _height / 2, origin.Y - margin / 2 - _height - (lines * _height), _height, _height);
                     var rectUV = Get64DirectionsUV(phi, distance, 3);
 
                     if (!mods.Contains(structValue.Name))
