@@ -1,72 +1,16 @@
-#Mod Contains;Name in tooltip;RGBA colour code;distance to render, -1 for always, -2 for while valid
+#Mod Contains;Name in tooltip;RGBA colour code;distance to render, -1 for always, -2 for while valid;Sound
 # Harbinger
 Metadata/Monsters/Avatar/Avatar;Harbinger;FF0000FF;-2;harbinger
 Metadata/Monsters/HarbingerPortal;Harbinger;FF0000FF;-2;harbinger
 Metadata/Monsters/Totems/HarbingerTotem;Harbinger;FF0000FF;-2;harbinger
-# Lightning Mirage Clone
-Metadata/Monsters/Clone/ShadowLightningClone;Lightning Clone;FF0000FF;-2;lightning
 # Volatile Core
 Metadata/Monsters/VolatileCore/VolatileCore;Volatile Core;FF0000FF;-2;core
 # Delirium
 Metadata/MiscellaneousObjects/Affliction/AfflictionInitiator;Delirium Mirror;8888BBFF;-1;delirium
-# Delve
-Metadata/Terrain/Leagues/Delve/Objects/DelveMineralVein;Sulphite;FFFF00FF;-2;sulphite
-Metadata/Terrain/Leagues/Delve/Objects/DelveMineralChest;Sulphite;FFFF00FF;-2;sulphite
-Metadata/Monsters/LeagueDelve/CaveDwellerChampion;Dweller Champion;FFFF00FF;-2;
 # Harvest
 Metadata/Terrain/Leagues/Harvest/Objects/HarvestFeatureChest;Seed Cache;00FFFFFF;-1;seed
-# Generic Rogue Exile
-Metadata/Monsters/Exiles/Exile;Rogue Exile;FEC076FF;-2;
-# Breachlords
-Metadata/Monsters/BreachBosses/BreachBossChaosWild;Breachlord Chayula;FFFF00FF;-2;breachlord
-Metadata/Monsters/BreachBosses/BreachBossFireWild;Breachlord Xoph;FFFF00FF;-2;breachlord
-Metadata/Monsters/BreachBosses/BreachBossColdWild;Breachlord Tul;FFFF00FF;-2;breachlord
-Metadata/Monsters/BreachBosses/BreachBossLightningWild;Breachlord Esh;FFFF00FF;-2;breachlord
-Metadata/Monsters/BreachBosses/BreachBossPhysicalWild;Breachlord Uul-Netol;FFFF00FF;-2;breachlord
 # Strongbox
 Metadata/Chests/StrongBoxes/StrongboxDivination;Diviner's Strongbox;FF00FFFF;-1;diviners
-Metadata/Chests/StrongBoxes/Strongbox;Strongbox;FFFFFFFF;-2;strongbox
-Metadata/Chests/StrongBoxes/Ornate;Ornate Strongbox;FFFFFFFF;-2;strongbox
-Metadata/Chests/StrongBoxes/Large;Large Strongbox;FFFFFFFF;-2;strongbox
-Metadata/Chests/StrongBoxes/Jeweller;Jeweller's Strongbox;FFFFFFFF;-2;strongbox
-Metadata/Chests/StrongBoxes/Gemcutter;Gemcutter's Strongbox;FFFFFFFF;-2;gemcutters
-Metadata/Chests/StrongBoxes/Chemist;Chemist's Strongbox;FFFFFFFF;-2;strongbox
-Metadata/Chests/StrongBoxes/CartographerEndMaps;Cartographer's Strongbox;FF00FFFF;-1;cartog
-Metadata/Chests/StrongBoxes/CartographerHighMaps;Cartographer's Strongbox;FF00FFFF;-1;cartog
-Metadata/Chests/StrongBoxes/CartographerMidMaps;Cartographer's Strongbox;FF00FFFF;-1;cartog
-Metadata/Chests/StrongBoxes/CartographerLowMaps;Cartographer's Strongbox;FF00FFFF;-1;cartog
-Metadata/Chests/StrongBoxes/Cartographer;Cartographer's Strongbox;FF00FFFF;-1;cartog
-Metadata/Chests/StrongBoxes/Artisan;Artisan's Strongbox;FFFFFFFF;-2;artisan
-Metadata/Chests/StrongBoxes/Arsenal;Blacksmith's Strongbox;FFFFFFFF;-2;strongbox
-Metadata/Chests/StrongBoxes/Armory;Armourer's Strongbox;FFFFFFFF;-1;strongbox
-Metadata/Chests/StrongBoxes/ArcanistProphecy;Arcanist's Strongbox;FF00FFFF;-1;arcanist
-Metadata/Chests/StrongBoxes/Arcanist;Arcanist's Strongbox;FF00FFFF;-1;arcanist
-# Torment
-Metadata/Monsters/Spirit/TormentedFisherman;Tormented Illegal Fisherman;FF00FFFF;-1;fisherman
-Metadata/Monsters/Spirit/TormentedEmbezzler;Tormented Embezzler;FF00FFFF;-1;embezzler
-# Torment Catch All
-Metadata/Monsters/Spirit/Tormented;Tormented Spirit;99FF99FF;-2;
-# Torment Other
-#Metadata/Monsters/Spirit/TormentedArsonist;Tormented Arsonist;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedFreezer;Tormented Aurora Cultist;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedBlasphemer;Tormented Blasphemer;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedCannibal;Tormented Cannibal;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedCharlatan;Tormented Charlatan;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedCutthroat;Tormented Cutthroat;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedCounterfeiter;Tormented Forger;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedMartyr;Tormented Martyr;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedMutilator;Tormented Mutilator;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedNecromancer;Tormented Necromancer;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedPoisoner;Tormented Poisoner;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedRogue;Tormented Rogue;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedLibrarian;Tormented Seditionist;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedSmuggler;Tormented Smuggler;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedSpy;Tormented Spy;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedExperimenter;Tormented Storm Cultist;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedThief;Tormented Thief;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedThug;Tormented Thug;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedCorrupter;Tormented Vaal Cultist;99FF99FF;-2;
-#Metadata/Monsters/Spirit/TormentedWarlord;Tormented Warlord;99FF99FF;-2;
 # Beyond Bosses
 Metadata/Monsters/BeyondDemons/BeyondDemon3-1;Tzteosh, Hungering Flame;FF0000FF;-2;beyond
 Metadata/Monsters/BeyondDemons/BeyondDemon3-2;Ephij, Crackling Sky;FF0000FF;-2;beyond
@@ -124,135 +68,4 @@ Metadata/Chests/DelveChests/DelveChestCurrencySockets;Currency Sockets;6400FFFF;
 Metadata/Chests/DelveChests/DelveChestCurrencySockets2;Currency Sockets 2;6400FFFF;-1;currency
 Metadata/Chests/DelveChests/DelveChestCurrencyVaal;Currency Vaal;6400FFFF;-1;currency
 Metadata/Chests/DelveChests/DelveChestCurrencyWisdomScrolls;Currency Wisdom;6400FFFF;-1;currency
-# Breach
-Metadata/Chests/Breach/BreachChest5Large;Chayula's Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest4Large;Uul-Netol's Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest3Large;Esh's Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest2Large;Tul's Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest1Large;Xoph's Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest5;Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest4;Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest3;Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest2;Clasped Hand;A65AFFFF;-2;hand
-Metadata/Chests/Breach/BreachChest1;Clasped Hand;A65AFFFF;-2;hand
-# Labyrinth
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverSkillGemsFortune;Silver Skill Gems Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverDivinationFortune;Silver Divination Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverCorruptedVaalFortune;Silver Corrupted Vaal Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverUnique3Fortune;Silver Unique 3 Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverUnique2Fortune;Silver Unique 2 Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverUnique1Fortune;Silver Unique 1 Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverJewelryJewelsFortune;Silver Jewelry Jewels Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverJewelryUniqueFortune;Silver Jewelry Unique Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverCurrencyQualityFortune;Silver Currency Quality Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverCurrencyFortune;Silver Currency Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerSkillGemsFortune;Danger Skill Gems Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerSocketsFortune;Danger Sockets Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerDivinationFortune;Danger Divination Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerCorruptedVaalFortune;Danger Corrupted Vaal Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerUniqueFortune;Danger Unique Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerJewelryFortune;Danger Jewelry Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerCurrencyQualityFortune;Danger Currency Quality Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerCurrencyFortune;Danger Currency Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0WeaponsFortune;Weapons Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0ArmourFortune;Armour Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0JewelryFortune;Jewelry Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0CurrencyQualityFortune;Currency Quality Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0CurrencyFortune;Currency Fortune;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverSkillGems;Silver Skill Gems;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverSockets;Silver Sockets;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverDivination;Silver Divination;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverCorruptedVaal;Silver Corrupted Vaal;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverUnique3;Silver Unique 3;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverUnique2;Silver Unique 2;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverUnique1;Silver Unique 1;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverJewelryJewels;Silver Jewelry Jewels;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverJewelryUnique;Silver Jewelry Unique;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverCurrencyQuality;Silver Currency Quality;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardSilverCurrency;Silver Currency;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerGeneric;Danger Generic;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerSkillGems;Danger Skill Gems;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerSockets;Danger Sockets;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerDivination;Danger Divination;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerCorruptedVaal;Danger Corrupted Vaal;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerUnique;Danger Unique;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerJewelry;Danger Jewelry;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerCurrencyQuality;Danger Currency Quality;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthRewardDangerCurrency;Danger Currency;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0Generic;Generic;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0Weapons;Weapons;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0Armour;Armour;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0Jewelry;Jewelry;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0CurrencyQuality;Currency Quality;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthReward0Currency;Currency;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthSpecificUnique;Lab Specific Unique;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthTreasureKey;Treasure Key;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthMaps1;Lab Maps;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthJewelryAndCurrency3;Labyrinth Jewelry And Currency 3;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthJewelryAndCurrency2;Labyrinth Jewelry And Currency 2;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthJewelryAndCurrency1;Labyrinth Jewelry And Currency 1;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthArmourAndCurrency3;Labyrinth Armour And Currency 3;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthArmourAndCurrency2;Labyrinth Armour And Currency 2;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthArmourAndCurrency1;Labyrinth Armour And Currency 1;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthWeaponsAndCurrency3;Labyrinth Weapons And Currency 3;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthWeaponsAndCurrency2;Labyrinth Weapons And Currency 2;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthWeaponsAndCurrency1;Labyrinth Weapons And Currency 1;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthGenericChestTier4;Labyrinth Generic Chest Tier 4;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthGenericChestTier3;Labyrinth Generic Chest Tier 3;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthGenericChestTier2;Labyrinth Generic Chest Tier 2;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthGenericChestTier1;Labyrinth Generic Chest Tier 1;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthGenericChestTier0;Labyrinth Generic Chest Tier 0;FFFFFFFF;-2;
-Metadata/Chests/Labyrinth/LabyrinthGenericChestNoFlag;Labyrinth Generic Chest No Flag;FFFFFFFF;-2;
-# Perandus
-Metadata/Chests/PerandusChests/PerandusDelveChest;Prospero's Vault;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusManorLostTreasureChest;Grand Perandus Vault;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusManorDivinationCardsChest;Cadiro's Catalogue;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusManorJewelryChest;Cadiro's Jewellery Box;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusManorMapsChest;Cadiro's Archive;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusManorCurrencyChest;Cadiro's Treasury;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusManorUniqueChest;Cadiro's Locker;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestFishing;Perandus Tackle Box;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestMaps;Perandus Archive;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestUniqueItem;Perandus Locker;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestKeepersOfTheTrove;Perandus Trove;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestDivinationCards;Perandus Catalogue;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestInventory;Perandus Wardrobe;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestCurrency;Perandus Treasury;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestGems;Perandus Safe;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestJewellery;Perandus Jewellery Box;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestCoins;Perandus Coffer;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestQuantity;Perandus Hoard;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestRarity;Perandus Cache;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestStandardMap;Temple Stash;FFFFFFFF;-2;
-Metadata/Chests/PerandusChests/PerandusChestStandard;Perandus Chest;FFFFFFFF;-2;
-# Heist
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Adiyah1;Adiyah Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Adiyah2;Adiyah Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Faustus1;Faustus Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Faustus2;Faustus Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Gianna1;Gianna Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Gianna2;Gianna Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/HeistQuestObjectBase;HeistQuestObjectBase Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Huck1;Huck Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Huck2;Huck Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Isla1;Isla Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Isla2;Isla Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Karst1;Karst Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Karst2;Karst Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Karst3;Karst Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Kurai1;Kurai Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Kurai2;Kurai Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Kurai3;Kurai Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Nenet1;Nenet Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Niles1;Niles Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Niles2;Niles Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Tibbs1;Tibbs Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Tibbs2;Tibbs Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Tulina1;Tulina Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Tulina2;Tulina Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/TulinaFinance;TulinaFinance Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Vinderi1;Vinderi Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Vinderi2;Vinderi Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Vinderi2Post;VinderiPost Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Whakano1;Whakano Quest Object;FFFFFFFF;-2;
-Metadata/Terrain/Leagues/Heist/Objects/Quest/Whakano2;Whakano Quest Object;FFFFFFFF;-2;
+

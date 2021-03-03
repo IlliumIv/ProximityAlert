@@ -6,30 +6,34 @@ using System.Text;
 using ExileCore.RenderQ;
 using ExileCore.Shared.Nodes;
 using ImGuiNET;
-namespace Proximity
+
+namespace ProximityAlert
 {
     partial class Proximity
     {
-        public static int IntSlider(string labelString, RangeNode<int> setting)
+        private Dictionary<string, FontContainer> Fonts { get; } = new Dictionary<string, FontContainer>();
+
+        private static int IntSlider(string labelString, RangeNode<int> setting)
         {
             var refValue = setting.Value;
             ImGui.SliderInt(labelString, ref refValue, setting.Min, setting.Max);
             return refValue;
         }
 
-        public static float FloatSlider(string labelString, RangeNode<float> setting)
+        private static float FloatSlider(string labelString, RangeNode<float> setting)
         {
             var refValue = setting.Value;
             ImGui.SliderFloat(labelString, ref refValue, setting.Min, setting.Max);
             return refValue;
         }
 
-        public static bool Checkbox(string labelString, bool boolValue)
+        private static bool Checkbox(string labelString, bool boolValue)
         {
             ImGui.Checkbox(labelString, ref boolValue);
             return boolValue;
         }
-        public static void HelpMarker(string desc)
+
+        private static void HelpMarker(string desc)
         {
             ImGui.TextDisabled("(?)");
             if (ImGui.IsItemHovered())
@@ -42,7 +46,7 @@ namespace Proximity
             }
         }
 
-        public static string ComboBox(string labelString, ListNode setting)
+        private static string ComboBox(string labelString, ListNode setting)
         {
             var items = setting.Values.ToArray();
             var refValue = Array.IndexOf(items, setting.Value);
@@ -50,11 +54,9 @@ namespace Proximity
             return items[refValue];
         }
 
-        public Dictionary<string, FontContainer> fonts { get; }  = new Dictionary<string, FontContainer>();
-
         private unsafe void SetFonts()
         {
-            var folder = "fonts";
+            const string folder = "fonts";
             var files = Directory.GetFiles(folder);
 
             if (!(Directory.Exists(folder) && files.Length > 0))
@@ -74,26 +76,26 @@ namespace Proximity
             }
 
             var sm = new ImFontAtlas();
-            ImFontAtlas* some = &sm;
+            var some = &sm;
 
             var imFontAtlasGetGlyphRangesCyrillic = ImGuiNative.ImFontAtlas_GetGlyphRangesCyrillic(some);
-            fonts["Default:13"] = new FontContainer(ImGuiNative.ImFontAtlas_AddFontDefault(some, null),
+            Fonts["Default:13"] = new FontContainer(ImGuiNative.ImFontAtlas_AddFontDefault(some, null),
                 "Default", 13);
 
-            foreach (var tuple in fontsForLoad)
+            foreach (var (item1, item2) in fontsForLoad)
             {
-                var bytes = Encoding.UTF8.GetBytes(tuple.Item1);
+                var bytes = Encoding.UTF8.GetBytes(item1);
 
                 fixed (byte* f = &bytes[0])
                 {
-                    fonts[$"{tuple.Item1.Replace(".ttf", "").Replace("fonts\\", "")}:{tuple.Item2}"] =
+                    Fonts[$"{item1.Replace(".ttf", "").Replace("fonts\\", "")}:{item2}"] =
                         new FontContainer(
-                            ImGuiNative.ImFontAtlas_AddFontFromFileTTF(some, f, tuple.Item2, null,
-                                imFontAtlasGetGlyphRangesCyrillic), tuple.Item1, tuple.Item2);
+                            ImGuiNative.ImFontAtlas_AddFontFromFileTTF(some, f, item2, null,
+                                imFontAtlasGetGlyphRangesCyrillic), item1, item2);
                 }
             }
 
-            Settings.Font.Values = new List<string>(fonts.Keys);
+            Settings.Font.Values = new List<string>(Fonts.Keys);
         }
 
         public override void DrawSettings()
@@ -101,23 +103,29 @@ namespace Proximity
             Settings.Font.Value = ComboBox("Fonts", Settings.Font);
             Settings.Scale.Value = FloatSlider("Height Scale", Settings.Scale);
             ImGui.SameLine(); HelpMarker("Height Scale.");
-            Settings.ProximityX.Value = IntSlider("Proximity X Position##proxx", Settings.ProximityX);
+            Settings.ProximityX.Value = IntSlider("Proximity X Position", Settings.ProximityX);
             ImGui.SameLine(); HelpMarker("Relative to the center of the screen.");
-            Settings.ProximityY.Value = IntSlider("Proximity Y Position##proxy", Settings.ProximityY);
+            Settings.ProximityY.Value = IntSlider("Proximity Y Position", Settings.ProximityY);
             ImGui.SameLine(); HelpMarker("Relative to the center of the screen.");
+            ImGui.SameLine();
+            HelpMarker("Relative to the center of the screen.");
             Settings.MultiThreading.Value = Checkbox("Enable Multithreading", Settings.MultiThreading);
             Settings.ShowModAlerts.Value = Checkbox("Show Alerts for Modifiers", Settings.ShowModAlerts);
-            ImGui.SameLine(); HelpMarker("By default this covers things such as corrupting blood.");
-            Settings.ShowNearby.Value = Checkbox("Show Alerts for Paths", Settings.ShowNearby);
-            ImGui.SameLine(); HelpMarker("By default this covers special monsters, chests, fossils, sulphite, delirium mirrors etc.");
+            ImGui.SameLine();
+            HelpMarker("By default this covers things such as corrupting blood.");
+            Settings.ShowPathAlerts.Value = Checkbox("Show Alerts for Paths", Settings.ShowPathAlerts);
+            ImGui.SameLine();
+            HelpMarker("By default this covers special monsters, chests, fossils, sulphite, delirium mirrors etc.");
             Settings.PlaySounds.Value = Checkbox("Play Sounds for Alerts", Settings.PlaySounds);
-            ImGui.SameLine(); HelpMarker($"Sounds can be found and go in Hud\\Plugins\\Compiled\\ProximityAlert\\");
+            ImGui.SameLine();
+            HelpMarker("Sounds can be found and go in Hud\\Plugins\\Compiled\\ProximityAlert\\");
             if (ImGui.Button("Reload ModAlerts & PathAlerts.txt"))
             {
                 LogMessage("Reloading ModAlerts & PathAlerts.txt...");
-                PathDict = LoadConfig(Path.Combine(DirectoryFullName, "PathAlerts.txt"));
-                ModDict = LoadConfig(Path.Combine(DirectoryFullName, "ModAlerts.txt"));
+                _pathDict = LoadConfig(Path.Combine(DirectoryFullName, "PathAlerts.txt"));
+                _modDict = LoadConfig(Path.Combine(DirectoryFullName, "ModAlerts.txt"));
             }
+
             Settings.ShowSirusLine.Value = Checkbox("Draw a Line to Real Sirus", Settings.ShowSirusLine);
         }
     }
