@@ -1,0 +1,135 @@
+#Mod Contains;Name in tooltip;RGBA colour code;distance to render -1 for always;soundfile
+# NEMESIS MODS
+MonsterNemesisColdBeam;Snow Bolt;FF0000FF;-1;
+MonsterNemesisLightningCloneLarge;Lightning Mirage;FF0000FF;-1;lightning
+MonsterNemesisLightningClone;Lightning Mirage;FF0000FF;-1;lightning
+MonsterNemesisFireProjectiles;Inferno Bolt;FF0000FF;-1;
+MonsterNemesisPhysicalProjectiles_;Light Bolt;FF0000FF;-1;
+MonsterNemesisImmortalGhost;Final Gasp;FF0000FF;-1;
+MonsterNemesisVinesLarge;Vine Snare;FF0000FF;-1;
+MonsterNemesisVines;Vine Snare;FF0000FF;-1;
+MonsterStealthModeBossSideArea;Camouflaged Predator;FF0000FF;-1;
+MonsterNemesisStealthMode;Camouflaged Predator;FF0000FF;-1;
+MonsterNemesisUniqueDrop;Inner Treasure;00CC00FF;-1;treasure
+MonsterImplicitNemesisUniqueDrop;Inner Treasure;00CC00FF;-1;treasure
+MonsterAuraPhysicalThorns1;Physical Reflect;F7941DFF;-1;physical
+MonsterPhysicalThorns;Physical Reflect;F7941DFF;-1;physical
+MonsterAuraElementalThorns1;Elemental Reflect;00FFFFFF;-1;elemental
+MonsterElementalThorns;Elemental Reflect;00FFFFFF;-1;elemental
+MonsterNemesisCorruptedBlood;Corrupting Blood;E60000FF;-1;corrupting
+MonsterItems1;Wealth monsters;FFFF66FF;-1;
+MonsterExplodesOnDeathFire1;Volatile Flameblood;669999FF;-1;volatile
+MonsterExplodesOnDeathLightning1;Volatile Stormblood;669999FF;-1;volatile
+MonsterExplodesOnDeathCold1;Volatile Iceblood;669999FF;-1;volatile
+MonsterThornsPhysical1;Physical Reflect;F7941DFF;-1;physical
+MonsterThornsElemental1;Elemental Reflect;00FFFFFF;-1;elemental
+MonsterThornsPhysical1Large;Physical Reflect;F7941DFF;-1;physical
+MonsterThornsElemental1Large;Elemental Reflect;00FFFFFF;-1;elemental
+# TALISMAN
+TalismanMonsterUnsetAmulet;Has 1 Socket Talisman;CC3399FF;-1;
+TalismanMonsterManaAmulet;Increased Mana Talisman;CC3399FF;-1;
+TalismanMonsterFireDamageAmulet;Fire Damage Talisman;CC3399FF;-1;
+TalismanMonsterColdDamageAmulet;Cold Damage Talisman;CC3399FF;-1;
+TalismanMonsterLightningDamageAmulet_;Lightning Damage Talisman;CC3399FF;-1;
+TalismanMonsterPhysicalDamageAmulet;Physical Damage Talisman;CC3399FF;-1;
+TalismanMonsterChaosDamageAmulet;Chaos Damage Talisman;CC3399FF;-1;
+TalismanMonsterAdditionalZombieAmulet;Plus 1 Zombie Talisman;CC3399FF;-1;
+TalismanMonsterCritChanceAmulet;Crit Chance Talisman;CC3399FF;-1;
+TalismanMonsterTimeDistortion;Atk & Cast Speed Talisman;CC3399FF;-1;
+TalismanMonsterPrismatic;Spell Damage Talisman;CC3399FF;-1;
+TalismanMonsterAttackAuras;Attack Damage Talisman;CC3399FF;-1;
+TalismanMonsterPiercingChance;Piercing Chance Talisman;CC3399FF;-1;
+TalismanMonsterStrengthAmulet;Strength Talisman;CC3399FF;-1;
+TalismanMonsterIntelligenceAmulet;Intelligence Talisman;CC3399FF;-1;
+TalismanMonsterDexterityAmulet;Dexterity Talisman;CC3399FF;-1;
+TalismanMonsterEnergyShieldAmulet;Energy Shield Talisman;CC3399FF;-1;
+TalismanMonsterFireLensAmulet;Fire Lens Talisman;CC3399FF;-1;
+TalismanMonsterColdLensAmulet;Cold Lens Talisman;CC3399FF;-1;
+TalismanMonsterLightningLensAmulet;Lightning Lens Talisman;CC3399FF;-1;
+TalismanMonsterLifeAmulet;Life Talisman;CC3399FF;-1;
+TalismanMonsterItemQuantityAmulet;Item Quantity Talisman;CC3399FF;-1;
+TalismanMonsterAllAttributesAmulet;All Attributes Talisman;CC3399FF;-1;
+TalismanMonsterAreaOfEffectAmulet;Area Of Effect Talisman;CC3399FF;-1;
+TalismanMonsterExperienceAmulet;Experience Talisman;CC3399FF;-1;
+TalismanMonsterDamageAmulet;Damage Talisman;CC3399FF;-1;
+TalismanMonsterCritMultiplierAmulet;Crit Multiplier Talisman;CC3399FF;-1;
+TalismanMonsterElementalHitAmulet;Elemental Hit Talisman;CC3399FF;-1;
+TalismanMonsterDeleteOnDeath;Delete On Death Talisman;CC3399FF;-1;
+TalismanMonsterFishHunger_;Fish Hunger Talisman;CC3399FF;-1;
+MapSpawnwealth;Map Spawn wealth;CC3399FF;-1;
+MapSpawnExtrawealth;Map Spawn Extra wealth;CC3399FF;-1;
+MapTalismanLeague;Map Talisman League;CC3399FF;-1;
+MapTalismanLeagueCrafted;Map Talisman League Crafted;CC3399FF;-1;
+TalismanT2Warded;Fangjaw Talisman;CC3399FF;-1;
+TalismanT2RatSwarm;Three Rat Talisman;CC3399FF;-1;
+TalismanT2LocustcallerIce;Ice Avian Twins Talisman;CC3399FF;-1;
+TalismanT2LocustcallerFire; Fire Avian Twins Talisman;CC3399FF;-1;
+TalismanT2LocustcallerLightning; LightningAvian Twins Talisman;CC3399FF;-1;
+TalismanT2Volcanic;Life Regen Talisman;CC3399FF;-1;
+TalismanT2Deathscape;Clutching Talisman;CC3399FF;-1;
+TalismanT2Wicked;Wereclaw Talisman;CC3399FF;-1;
+TalismanT2SacrificalBlades;Critical Chance Talisman;CC3399FF;-1;
+TalismanT2StaticFiends;Splitnewt Talisman;CC3399FF;-1;
+TalismanT3Ghosting;Spinefuse Talisman;CC3399FF;-1;
+TalismanT3Cataclysmic_;Three Hands Talisman;CC3399FF;-1;
+TalismanT3Terrifying;Rotfeather Talisman;CC3399FF;-1;
+TalismanT3RelentlessRhoas;Monkey Paw Talisman;CC3399FF;-1;
+TalismanT3MonkeyTwins_;Monkey Twins Talisman;CC3399FF;-1;
+TalismanT3Golden;Longtooth Talisman;CC3399FF;-1;
+TalismanT4Rigwald;Greatwolf Talisman;CC3399FF;-1;
+TalismanBeastBossShockwaveDaemon;Beast Boss Shockwave Daemon;CC3399FF;-1;
+MonsterNoTalisman_;No wealth;CC3399FF;-1;
+MonsterRatTalismanPoisonOnHit;Rat Talisman Poison On Hit;CC3399FF;-1;
+MonsterSpawnedWithTalisman;TalismanBonus;CC3399FF;-1;
+MonsterHasTalismanNormal;TalismanBonus Normal;CC3399FF;-1;
+MonsterHasTalismanMagic;TalismanBonus Magic;CC3399FF;-1;
+MonsterHasTalismanRare;TalismanBonus Rare;CC3399FF;-1;
+MonsterHasTalismanUnique;TalismanBonus Unique;CC3399FF;-1;
+TalismanRigwaldSideAreaInfo;Talisman Rigwald Side Area Info;CC3399FF;-1;
+# BLOODLINES MODS
+MonsterBloodlinesDamageCharges;Legacy of Zeal - Damage;FF0064FF;-1;
+MonsterBloodlinesSpeedCharges;Legacy of Vigour - Speed;FF0064FF;-1;
+MonsterBloodlinesMarkOfCannibalism;Mark of Cannibalism;FF0064FF;-1;
+MonsterBloodlinesFlaringPulseblood;Flaring Pulseblood;FF0064FF;-1;
+MonsterBloodlinesRimePulseblood;Rime Pulseblood;FF0064FF;-1;
+MonsterBloodlinesStaticPulseblood;Static Pulseblood;FF0064FF;-1;
+MonsterBloodlinesChaosBond;Bond of Chaos;FF0064FF;-1;
+MonsterBloodlinesCongealingBloodRed_;Living Blood Red;FF0064FF;-1;
+MonsterBloodlinesCongealingBloodYellow;Living Blood Yellow;FF0064FF;-1;
+MonsterBloodlinesCongealingBloodMud;Living Blood Mud;FF0064FF;-1;
+#MonsterBloodlinesSharedEnduranceCharge;Shared Boon Endurance;FF0064FF;-1;
+#MonsterBloodlinesSharedFrenzyCharge;Shared Boon Frenzy;FF0064FF;-1;
+#MonsterBloodlinesSharedPowerCharge;Shared Boon Power;FF0064FF;-1;
+MonsterBloodlinesBurningAura;Burning Aura;FF0064FF;-1;
+MonsterBloodlinesBurningAura2;Burning Aura 2;FF0064FF;-1;
+MonsterBloodlinesBurningAura3;Burning Aura 3;FF0064FF;-1;
+MonsterBloodlinesBurningAura4;Burning Aura 4;FF0064FF;-1;
+MonsterBloodlinesBurningAura5;Burning Aura 5;FF0064FF;-1;
+MonsterBloodlinesBurningAura6;Burning Aura 6;FF0064FF;-1;
+MonsterBloodlinesBurningAura7;Burning Aura 7;FF0064FF;-1;
+MonsterBloodlinesChillingAura;Chilling Aura;FF0064FF;-1;
+MonsterBloodlinesShockingAura;Shocking Aura;FF0064FF;-1;
+MonsterBloodlinesFirestorm;Order of the Frozen Sky;FF0064FF;-1;
+MonsterBloodlinesGhostTotem;Heralds of the Obelisk 1;FF0064FF;-1;
+MonsterBloodlinesGhostTotem2;Heralds of the Obelisk 2;FF0064FF;-1;
+MonsterBloodlinesGhostTotem3;Heralds of the Obelisk 3;FF0064FF;-1;
+MonsterBloodlinesGhostTotem4;Heralds of the Obelisk 4;FF0064FF;-1;
+MonsterBloodlinesGhostTotem5;Heralds of the Obelisk 5;FF0064FF;-1;
+MonsterBloodlinesSpiritWalkers;Spirit Walkers;FF0064FF;-1;
+MonsterBloodlinesGuardian;Bearers of the Guardian;FF0064FF;-1;
+MonsterBloodlinesUnholyMight;Otherworldly;FF0064FF;-1;
+MonsterBloodlinesPhylacteralLink1;Phylacteral Link;FF0064FF;-1;
+MonsterBloodlinesDropRareItem;Keepers of the Trove;FFFF66FF;-1;
+MonsterBloodlinesCorruptedBlood;Corrupted Bloodline 1;FF0064FF;-1;
+MonsterBloodlinesCorruptedBlood2;Corrupted Bloodline 2;FF0064FF;-1;
+MonsterBloodlinesCorruptedBlood3;Corrupted Bloodline 3;FF0064FF;-1;
+MonsterBloodlinesCorruptedBlood4;Corrupted Bloodline 4;FF0064FF;-1;
+MonsterBloodlinesCorruptedBlood5;Corrupted Bloodline 5;FF0064FF;-1;
+MonsterBloodlinesVoidspawn;Voidspawn of Abaxoth;FF0064FF;-1;
+MonsterBloodlinesNecrovigil1;Necrovigil;FF0064FF;-1;
+MonsterBloodlinesBeaconOnDeathFire;Flame Bearers;FF0064FF;-1;
+MonsterBloodlinesBeaconOnDeathCold;Frost Bearers;FF0064FF;-1;
+MonsterBloodlinesBeaconOnDeathLightning;Storm Bearers;FF0064FF;-1;
+MonsterBloodlinesUnionOfSouls;Union of Souls;FF0064FF;-1;
+MonsterBloodlinesShrouded;Shrouded;FF0064FF;-1;
+MonsterBloodlinesPackDeathCountDaemon;Unnamed Bloodline Mod;FF0064FF;-1;

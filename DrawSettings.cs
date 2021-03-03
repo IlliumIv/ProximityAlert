@@ -118,7 +118,7 @@ namespace Proximity
                 PathDict = LoadConfig(Path.Combine(DirectoryFullName, "PathAlerts.txt"));
                 ModDict = LoadConfig(Path.Combine(DirectoryFullName, "ModAlerts.txt"));
             }
-            Settings.ShowSirusLine.Value = Checkbox("Draw a Line to Real Sirus", Settings.ShowModAlerts);
+            Settings.ShowSirusLine.Value = Checkbox("Draw a Line to Real Sirus", Settings.ShowSirusLine);
         }
     }
 }
