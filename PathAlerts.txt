@@ -9,6 +9,7 @@ Metadata/Monsters/VolatileCore/VolatileCore;Volatile Core;FF0000FF;-2;core
 Metadata/MiscellaneousObjects/Affliction/AfflictionInitiator;Delirium Mirror;8888BBFF;-1;delirium
 # Harvest
 Metadata/Terrain/Leagues/Harvest/Objects/HarvestFeatureChest;Seed Cache;00FFFFFF;-1;seed
+Metadata/Terrain/Leagues/Harvest/harvest_encounter.arm;Harvest;00FFFFFF;-1;seed
 # Strongbox
 Metadata/Chests/StrongBoxes/StrongboxDivination;Diviner's Strongbox;FF00FFFF;-1;diviners
 # Beyond Bosses
