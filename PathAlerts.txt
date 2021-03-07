@@ -1,16 +1,17 @@
 #Mod Contains;Name in tooltip;RGBA colour code;distance to render, -1 for always, -2 for while valid;Sound
 # Harbinger
-Metadata/Monsters/Avatar/Avatar;Harbinger;FF0000FF;-2;harbinger
-Metadata/Monsters/HarbingerPortal;Harbinger;FF0000FF;-2;harbinger
-Metadata/Monsters/Totems/HarbingerTotem;Harbinger;FF0000FF;-2;harbinger
+Metadata/Monsters/Avatar/Avatar;Harbinger;00FF00FF;-2;harbinger
+Metadata/Monsters/HarbingerPortal;Harbinger;00FF00FF;-2;harbinger
+Metadata/Monsters/Totems/HarbingerTotem;Harbinger;00FF00FF;-2;harbinger
 # Volatile Core
 Metadata/Monsters/VolatileCore/VolatileCore;Volatile Core;FF0000FF;-2;core
 # Delirium
-Metadata/MiscellaneousObjects/Affliction/AfflictionInitiator;Delirium Mirror;8888BBFF;-1;delirium
+Metadata/MiscellaneousObjects/Affliction/AfflictionInitiator;Delirium Mirror;00FF00FF;-1;delirium
 # Harvest
-Metadata/Terrain/Leagues/Harvest/Objects/HarvestFeatureChest;Seed Cache;00FFFFFF;-1;seed
+Metadata/Terrain/Leagues/Harvest/Objects/HarvestFeatureChest;Seed Cache;00FF00FF;-1;seed
+Metadata/Terrain/Leagues/Harvest/harvest_encounter;Seed Cache;00FF00FF;-1;seed
 # Strongbox
-Metadata/Chests/StrongBoxes/StrongboxDivination;Diviner's Strongbox;FF00FFFF;-1;diviners
+Metadata/Chests/StrongBoxes/StrongboxDivination;Diviner's Strongbox;00FF00FF;-1;diviners
 # Beyond Bosses
 Metadata/Monsters/BeyondDemons/BeyondDemon3-1;Tzteosh, Hungering Flame;FF0000FF;-2;beyond
 Metadata/Monsters/BeyondDemons/BeyondDemon3-2;Ephij, Crackling Sky;FF0000FF;-2;beyond
@@ -68,4 +69,3 @@ Metadata/Chests/DelveChests/DelveChestCurrencySockets;Currency Sockets;6400FFFF;
 Metadata/Chests/DelveChests/DelveChestCurrencySockets2;Currency Sockets 2;6400FFFF;-1;currency
 Metadata/Chests/DelveChests/DelveChestCurrencyVaal;Currency Vaal;6400FFFF;-1;currency
 Metadata/Chests/DelveChests/DelveChestCurrencyWisdomScrolls;Currency Wisdom;6400FFFF;-1;currency
-
