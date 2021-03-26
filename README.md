@@ -1,6 +1,6 @@
 # ProximityAlert
-Extract assets.zip into the compiled output folder.
-Mostly customisable through the .txt files but some things are hard coded because I'm too lazy to clean them up.
+
+Download <https://github.com/vadash/ProximityAlert/archive/master.zip>. Remove `-master` from name. Move to `PoEHelper\Plugins\Source\PLUGIN_NAME`. Extract assets.zip. Dont compile.
 
 # Includes
 **Mod Warnings:** sounds and indicators for corrupted blood etc..
