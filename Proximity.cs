@@ -249,8 +249,10 @@ namespace ProximityAlert
 
                 // entities
                 foreach (var entity in GameController.EntityListWrapper.Entities
-                    .Where(x => x.Type == EntityType.Chest || x.Type == EntityType.Monster ||
-                                x.Type == EntityType.IngameIcon))
+                    .Where(x => x.Type == EntityType.Chest ||
+                                x.Type == EntityType.Monster ||
+                                x.Type == EntityType.IngameIcon ||
+                                x.Type == EntityType.MiscellaneousObjects))
                 {
                     var match = false;
                     var lineColor = Color.White;
@@ -282,15 +284,6 @@ namespace ProximityAlert
                         // Graphics.DrawText(structValue.Name, new System.Numerics.Vector2(origin.X + 4, origin.Y - (lines * 15)), structValue.Color, 10, "FrizQuadrataITC:15", FontAlign.Left);
                         Graphics.DrawImage("Direction-Arrow.png", rectDirection, rectUV, structValue.Color);
                         match = true;
-                    }
-
-                    // Rogue Exiles
-                    if (ePath.StartsWith("Metadata/Monsters/Exiles/Exile"))
-                    {
-                        lineText = "Rogue Exile";
-                        lineColor = new Color(254, 192, 118);
-                        match = true;
-                        lines++;
                     }
 
                     // Contains Check
