@@ -6,7 +6,7 @@ namespace ProximityAlert
 {
     public class ProximitySettings : ISettings
     {
-        public ListNode Font { get; set; } = new ListNode {Values = new List<string> {"FrizQuadrataITC:22"}};
+        public ListNode Font { get; set; } = new ListNode {Values = new List<string> {"Default:13"}};
         public RangeNode<float> Scale { get; set; } = new RangeNode<float>(1, (float) 0.1, 10);
         public RangeNode<int> ProximityX { get; set; } = new RangeNode<int>(0, -3840, 2560);
         public RangeNode<int> ProximityY { get; set; } = new RangeNode<int>(0, -3840, 2560);

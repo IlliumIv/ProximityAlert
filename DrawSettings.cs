@@ -95,7 +95,9 @@ namespace ProximityAlert
                 }
             }
 
-            Settings.Font.Values = new List<string>(Fonts.Keys);
+            var fontList = new List<string>(Fonts.Keys);
+            Settings.Font.Values = fontList;
+            Settings.Font.Value = fontList.First();
         }
 
         public override void DrawSettings()
