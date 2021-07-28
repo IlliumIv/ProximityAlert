@@ -340,3 +340,5 @@ ASALocalRun/
 healthchecksdb
 *.7z
 
+# KDiff3
+*.orig
